@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>you shouldn't be here</title>
+  <style>
+    :root{
+      --bg1:#000;
+      --bg2:#120202;
+      --fg:#ff3b3b;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg1),var(--bg2));}
+    .wrap{
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:2rem;
+      overflow:hidden;
+    }
+    .box{
+      width:100%;
+      max-width:1200px;
+      padding:2rem;
+      border-radius:12px;
+      box-shadow:0 20px 60px rgba(0,0,0,.6);
+      background:rgba(0,0,0,.15);
+    }
+    .text{
+      font-family: "Impact", "Arial Black", "Helvetica Neue", Arial, sans-serif;
+      font-weight:800;
+      font-size: clamp(18px, 3.8vw, 34px);
+      letter-spacing:1px;
+      color:var(--fg);
+      line-height:1.05;
+      white-space:pre-wrap;
+      word-break:break-word;
+      text-transform:uppercase;
+      text-shadow:
+        -1px -1px 0 #000,
+        1px 1px 0 rgba(0,0,0,0.6),
+        0 6px 30px rgba(255,59,59,0.08);
+      transform: translateZ(0);
+      animation: pulse 2.2s linear infinite;
+      user-select:text;
+    }
+    @keyframes pulse{
+      0%{filter:drop-shadow(0 0 0 rgba(255,59,59,0.0)); transform:scale(1) translateY(0);}
+      50%{filter:drop-shadow(0 20px 40px rgba(255,59,59,0.06)); transform:scale(1.02) translateY(-2px);}
+      100%{filter:drop-shadow(0 0 0 rgba(255,59,59,0.0)); transform:scale(1) translateY(0);}
+    }
+    /* small-screen adjustment */
+    @media (max-width:540px){
+      .box{padding:1rem;}
+      .text{font-size:16px; letter-spacing:0.6px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box" role="region" aria-label="alert">
+      <div class="text" id="message">
+YOU SHOULD’NT BE HERE YOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HEREYOU SHOULD’NT BE HERE 68 74 74 70 73 3A 2F 2F 6D 69 6E 65 72 78 62 34 2E 67 69 74 68 75 62 2E 69 6F 2F 66 69 6E 61 6C 2D 6C 69 6E 6B fineyouwin
+      </div>
+    </div>
+  </div>
+</body>
+</html>
